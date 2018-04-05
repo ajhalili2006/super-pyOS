@@ -1,7 +1,7 @@
 🐍🐍🐍 Welcome to the Glitch Python
 ==================================
 
-This is a port of the dfault Glitch Node app to Python3.. on Glitch!!!
+This is a port of the default Glitch Node app to Python3.. on Glitch!!!
 
 Changes
 -------
