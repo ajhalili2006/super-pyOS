@@ -1,5 +1,21 @@
-Welcome to the Glitch BETA
-==========================
+🐍🐍🐍 Welcome to the Glitch Python
+==================================
+
+This is a port of the dfault Glitch Node app to Python3.. on Glitch!!!
+
+Changes
+-------
+- A requirements file at `.requirements.txt`
+- pip install requirements in `package.json` & start python server in the start script
+- custom `watch.json` for Python/Flask
+- `views/index.html` => `templates/index.html` & convert it to jinja2 for static assets too
+- `public/` => `static/`
+- ported `server.js` to `server.py`
+
+Made By [Daniel Schep](https://twitter.com/schep_)
+----------------------
+
+**The remainder of this readme is the original README.**
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
@@ -26,11 +42,3 @@ Made by [Fog Creek](https://fogcreek.com/)
 
 \ ゜o゜)ノ
 
-
-Changes
--------
-- A requirements file at `.requirements.txt`
-- pip install requirements in `package.json` start script
-- custom `watch.json` for python
-- `views/index.html` => `templates/index.html` & convert it to jinja2 for static assets too
-- `public/` => `static/`
