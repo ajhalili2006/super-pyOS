@@ -29,6 +29,7 @@ Made by [Fog Creek](https://fogcreek.com/)
 
 Changes
 -------
-- requirements.txt
+- A requirements file at `.requirements.txt`
 - pip install requirements in `package.json` start script
 - custom `watch.json` for python
+- `v

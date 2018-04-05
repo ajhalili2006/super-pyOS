@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "description": "What am I about?",
   "scripts": {
-    "start": "node server.js"
+    "start": "pip3 install -r .requirements.txt -t .data/site-packages && env PYTHONPATH=$PWD/.data/site-packages python3 server.py"
   },
   "dependencies": {
     "express": "^4.16.3"

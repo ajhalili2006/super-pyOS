@@ -2,7 +2,7 @@
   "install": {
     "include": [
       "^package\\.json$",
-      "^requirements.txt$",
+      "^.requirements.txt$",
       "^\\.env$"
     ]
   },
