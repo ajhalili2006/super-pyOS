@@ -28,7 +28,7 @@ dreams = [
 def get_dreams():
     return jsonify(dreams)
 
-# // could also use the POST body instead of query string: http://flask.pocoo.org/docs/0.12/quickstart/#the-request-object
+# could also use the POST body instead of query string: http://flask.pocoo.org/docs/0.12/quickstart/#the-request-object
 @application.route('/dreams', methods=['POST'])
 def add_dream():
     dreams.append(request.args.get('dream'))
