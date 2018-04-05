@@ -32,4 +32,5 @@ Changes
 - A requirements file at `.requirements.txt`
 - pip install requirements in `package.json` start script
 - custom `watch.json` for python
-- `v
+- `views/index.html` => `templates/index.html` & convert it to jinja2 for static assets too
+- `public/` => `static/`
