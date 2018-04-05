@@ -25,3 +25,10 @@ Made by [Fog Creek](https://fogcreek.com/)
 -------------------
 
 \ ゜o゜)ノ
+
+
+Changes
+-------
+- requirements.txt
+- pip install requirements in `package.json` start script
+- custom `watch.json` for python
