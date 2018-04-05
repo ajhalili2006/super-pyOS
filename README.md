@@ -11,11 +11,10 @@ Changes
 - `views/index.html` => `templates/index.html` & convert it to jinja2 for static assets too
 - `public/` => `static/`
 - ported `server.js` to `server.py`
+- update `README.md`
 
-Made By [Daniel Schep](https://twitter.com/schep_)
+Made By [@dschep](https://glitch.com/@dschep)
 ----------------------
-
-**The remainder of this readme is the original README.**
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
@@ -28,12 +27,12 @@ Your Project
 ------------
 
 On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
+- edit `static/client.js`, `static/style.css` and `templates/index.html`
 - drag in `assets`, like images or music, to add them to your project
 
 On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
+- your app starts at `server.py`
+- add frameworks and packages in `.requirements.txt`
 - safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
 
