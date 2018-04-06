@@ -8,8 +8,8 @@ Changes
 - A requirements file at `.requirements.txt`
 - pip install requirements in `package.json` & start python server in the start script
 - custom `watch.json` for Python/Flask
-- `views/index.html` => `templates/index.html` & convert it to jinja2 for static assets too
-- `public/` => `static/`
+- `views/index.html` ➡️ `templates/index.html` & convert it to jinja2 for static assets too
+- `public/` ➡️ `static/`
 - ported `server.js` to `server.py`
 - update `README.md`
 
