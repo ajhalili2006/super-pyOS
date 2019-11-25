@@ -20,4 +20,12 @@ if DEBUG_MODE == "false":
   print("pyOS- version 1.0_BETA")
   print("© 2019, protech IT solutions")
   
-  command = input 
+  command = input(currentpth + "> ")
+  # command prompt ends here, my part is done
+  
+  # todo= put all commands into a seperate file  
+  
+  if command == "cmds":
+    print("cmds: shows all available commands")
+
+  
