@@ -27,5 +27,8 @@ if DEBUG_MODE == "false":
   
   if command == "cmds":
     print("cmds: shows all available commands")
+    
+  if command == "ls":
+    print(os.listdir)  # should print the contents of the current directory
 
   
