@@ -2,6 +2,7 @@ import os
 import platform    # modules to use
 import subprocess
 import sys
+import glob
 from time import *
 
 # machine settings / enviroment paths
@@ -27,8 +28,9 @@ if DEBUG_MODE == "false":
   
   if command == "cmds":
     print("cmds: shows all available commands")
+    print("ls: shows all files in the directory")
     
   if command == "ls":
-    print(os.listdir)  # should print the contents of the current directory
+    print(glob.glob(currentpth))
 
   

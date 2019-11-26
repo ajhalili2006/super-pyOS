@@ -174,9 +174,9 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 END OF TERMS AND CONDITIONS
 
-APPENDIX: How to apply the Apache License to your work.
+APPENDIX: How to apply the ProTech open software License to your work.
 
-      To apply the Apache License to your work, attach the following
+      To apply the ProTech open software License to your work, attach the following
       boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
@@ -187,7 +187,7 @@ APPENDIX: How to apply the Apache License to your work.
 
 Copyright 2019 17lwinn
 
-Licensed under the Apache License, Version 2.0 (the "License");
+Licensed under the ProTech open software License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
