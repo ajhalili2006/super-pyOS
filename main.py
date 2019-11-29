@@ -20,6 +20,7 @@ if DEBUG_MODE == "false":
   # command prompt starts here
   print("pyOS- version 1.0_BETA")
   print("© 2019, protech IT solutions")
+  print("WARNING- SYSTEM WILL RESET AFTER COMMANDS ARE EXECUTED")
   
   command = input(currentpth + "> ")
   # command prompt ends here, my part is done
@@ -33,4 +34,5 @@ if DEBUG_MODE == "false":
   if command == "ls":
     print(glob.glob(currentpth))
 
-  
+# script closes at this point, so we run this command to loop it
+os.system('python3 main.py')
