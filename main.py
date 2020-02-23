@@ -1,4 +1,5 @@
 import os
+import io
 import platform    # modules to use
 import subprocess
 import sys
@@ -12,18 +13,15 @@ currentpth = os.getcwd()
 #----------------------------------------------------------------------------------------#
 
 if DEBUG_MODE == "true":
-  sys.exit('debug mode has been enabled- please disable to continue')
+  sys.exit('debug mode has been enabled- all system processes have been halted')
 
 if DEBUG_MODE == "false":
   print("beginning boot process...")
   sleep(3)
   # command prompt starts here
-  print("pyOS- version 1.0_BETA")
-  print("© 2019, protech IT solutions")
-  print("WARNING- SYSTEM WILL RESET AFTER COMMANDS ARE EXECUTED")
   
   command = input(currentpth + "> ")
-  # command prompt ends here, my part is done
+  # command prompt ends here
   
   # todo= put all commands into a seperate file  
   
@@ -33,6 +31,9 @@ if DEBUG_MODE == "false":
     
   if command == "ls":
     print(glob.glob(currentpth))
+    
+  if command == "xen":
+    os.system('python3 xencli.py')
 
 # script closes at this point, so we run this command to loop it
-os.system('python3 main.py')
+os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
