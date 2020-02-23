@@ -4,8 +4,6 @@ import platform    # modules to use
 import subprocess
 import sys
 import glob
-import click
-click.clear()
 from time import *
 
 # machine settings / enviroment paths
@@ -47,7 +45,8 @@ if command == "cmds":
     
 if command == "ls":
 
-  if DEBUG_
+  if DEBUG_MODE == True:
+    0
   
   print(glob.glob(currentpth))
     
