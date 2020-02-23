@@ -4,10 +4,22 @@ import platform    # modules to use
 import subprocess
 import sys
 import glob
+import click
+click.clear()
 from time import *
 
 # machine settings / enviroment paths
-DEBUG_MODE = "false" # debug mode shuts down the script on execution to prevent damage
+
+#debug mode ( dev mode )
+DEBUG_MODE = False
+if os.getenv("DEBUG_PYOS") == None:
+  DEBUG_MODE = False # debug mode shuts down the script on execution to prevent damage
+elif os.getenv("DEBUG_PYOS") == True:
+  DEBUG_MODE = True
+  
+  
+  
+#-------------------------  
 currentpth = os.getcwd()
 
 #----------------------------------------------------------------------------------------#
@@ -53,7 +65,9 @@ if command == "down-the-rabbit-hole":
   ans = input ("are you sure you want to enable debug(Y/N)> ")
   
   if ans == "Y":
-    DEBUG_MODE = 
+    print("we are setting up developer mode! please wait")
+    DEBUG_MODE = True
+    os.putenv("DEBUG_PYOS", True)
 
 # script closes at this point, so we run this command to loop it
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
