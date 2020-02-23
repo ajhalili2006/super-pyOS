@@ -32,7 +32,7 @@ elif command == "creators":
 if help == "macros":
   print("macros are Xen's way of running shell commands")
   sleep(2)
-  print("example")
+  print("example:")
   sleep(2)
   print("!%#!/bin/bash")
   print("python3 xent.py macaroni.xt")
