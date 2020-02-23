@@ -18,7 +18,7 @@ elif os.getenv("DEBUG_PYOS") == True:
   
   
 #-------------------------  
-path = os.getcwd()
+currentpth = os.getcwd()
 
 #----------------------------------------------------------------------------------------#
 
@@ -28,8 +28,8 @@ path = os.getcwd()
 sleep(3)
   # command prompt starts here
   
-command = input(path + "> ")
-  
+
+command = input(currentpth + "> ")
   # command prompt ends here
   
   # todo= put all commands into a seperate file  
@@ -37,7 +37,9 @@ command = input(path + "> ")
 
 if command == "cmds":
   print("cmds: shows all available commands")
+  
   print("ls:   shows all files in the directory")
+  
   print("xen:  xent cli")
     
     
@@ -46,7 +48,7 @@ if command == "ls":
   if DEBUG_MODE == True:
     0
   
-  print(glob.glob(path))
+  print(glob.glob(currentpth))
     
   
 if command == "xen":
@@ -63,7 +65,7 @@ if command == "down-the-rabbit-hole":
   
   if ans == "Y":
     print("we are setting up developer mode! please wait")
-    DEBUG_MODE = 
+    DEBUG_MODE = True
     os.putenv("DEBUG_PYOS", True)
 
 # script closes at this point, so we run this command to loop it
