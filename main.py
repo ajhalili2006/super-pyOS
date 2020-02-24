@@ -42,22 +42,20 @@ if command == "cmds":
     
     
 if command == "ls":
-
-  if DEBUG_MODE == True:
-    print ("test debug")
-  exn = ""
-  print(glob.glob(currentpth))
+  xr = input("path>")
+  if xr == "":
+    print(str.join("   ",os.listdir(currentpth)))
+  else:
+  
+    print(str.join("   ",os.listdir(currentpth + "/" + xr)))
   
 if command == "xen":
-
-  os.system('python3 xencli.py')
-    
+  os.system('python3 xencli.py')   
     
     
   # setup debug
   
 if command == "down-the-rabbit-hole":
-
   ans = input ("are you sure you want to enable debug(Y/N)> ")
   
   if ans == "Y":
@@ -65,5 +63,12 @@ if command == "down-the-rabbit-hole":
     print("ok, we need a bit of help to activate the modules!\nrun the command specified for your os ( all linux os are listed under 'linux', and it must be placed in the .bashrc file at the ***BOTTOM***)")
     print("WINDOWS 10:  setx DEBUG_PYOS true")
     print("LINUX:       export DEBUG_PYOS=\"true\"")
+if command == "cd":
+    np = input(currentpth + "/")
+
+    try:
+      os.chdir(currentpth + "/" + np)
+    except:
+      print("unable to open directory!")
     # script closes at this point, so we run this command to loop it
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
