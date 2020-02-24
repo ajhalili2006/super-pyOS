@@ -12,9 +12,8 @@ from time import *
 DEBUG_MODE = False
 if os.getenv("DEBUG_PYOS") == None:
   DEBUG_MODE = False # debug mode shuts down the script on execution to prevent damage
-elif os.getenv("DEBUG_PYOS") == True:
+elif os.getenv("DEBUG_PYOS") == "true":
   DEBUG_MODE = True
-  
   
   
 #-------------------------  
@@ -65,8 +64,13 @@ if command == "down-the-rabbit-hole":
   
   if ans == "Y":
     print("we are setting up developer mode! please wait")
-    DEBUG_MODE = True
-    os.putenv("DEBUG_PYOS", True)
-
+    DEBUG_MODE = "true"
+    os.putenv("DEBUG_PYOS", "true")
+    print("restarting....")
+    sleep(1)
+    try:
+      os.system("clear")
+    except:
+      os.system("cls")
 # script closes at this point, so we run this command to loop it
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
