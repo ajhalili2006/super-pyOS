@@ -57,12 +57,6 @@ if command == "xen":
   
 if command == "down-the-rabbit-hole":
   ans = input ("are you sure you want to enable debug(Y/N)> ")
-  
-  if ans == "Y":
-    print("we are setting up developer mode! please wait")
-    print("ok, we need a bit of help to activate the modules!\nrun the command specified for your os ( all linux os are listed under 'linux', and it must be placed in the .bashrc file at the ***BOTTOM***)")
-    print("WINDOWS 10:  setx DEBUG_PYOS true")
-    print("LINUX:       export DEBUG_PYOS=\"true\"")
 if command == "cd":
     np = input(currentpath + "/")
 
@@ -81,4 +75,5 @@ if command == "clear":
       print("EXCEPT: attempted 'clear' falling back to 'cls'")
       os.system("cls")
     # script closes at this point, so we run this command to loop it
-os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
+
+    os.system('python3 ~/main.py')#this will go through the entire boot process again, the boot section should go into a seperate module

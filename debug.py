@@ -1,4 +1,4 @@
-from os import getenv, putenv, system,environ
+from os import * # imports everything
 
 
 
