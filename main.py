@@ -17,7 +17,7 @@ elif os.getenv("DEBUG_PYOS") == "true":
   
   
 #-------------------------  
-currentpth = os.getcwd()
+currentpath = os.getcwd()
 
 #----------------------------------------------------------------------------------------#
 
@@ -27,7 +27,7 @@ currentpth = os.getcwd()
   # command prompt starts here
   
 
-command = input(currentpth + "> ")
+command = input(currentpath + "> ")
   # command prompt ends here
   
   # todo= put all commands into a seperate file  
@@ -44,10 +44,10 @@ if command == "cmds":
 if command == "ls":
   xr = input("path>")
   if xr == "":
-    print(str.join("   ",os.listdir(currentpth)))
+    print(str.join("   ",os.listdir(currentpath)))
   else:
   
-    print(str.join("   ",os.listdir(currentpth + "/" + xr)))
+    print(str.join("   ",os.listdir(currentpath + "/" + xr)))
   
 if command == "xen":
   os.system('python3 xencli.py')   
@@ -64,11 +64,21 @@ if command == "down-the-rabbit-hole":
     print("WINDOWS 10:  setx DEBUG_PYOS true")
     print("LINUX:       export DEBUG_PYOS=\"true\"")
 if command == "cd":
-    np = input(currentpth + "/")
+    np = input(currentpath + "/")
 
     try:
-      os.chdir(currentpth + "/" + np)
+      os.chdir(currentpath + "/" + np)
     except:
       print("unable to open directory!")
+      
+if command == "clear":
+  #there is a safeguard to this, good!
+  try:
+    os.system("clear")
+  except:
+    # for developer mode:
+    if DEBUG_MODE == True:
+      print("EXCEPT: attempted 'clear' falling back to 'cls'")
+      os.system("cls")
     # script closes at this point, so we run this command to loop it
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
