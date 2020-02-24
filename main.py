@@ -24,7 +24,6 @@ currentpth = os.getcwd()
 #if DEBUG_MODE == "false":
   # print("beginning boot process...")
  
-sleep(3)
   # command prompt starts here
   
 
@@ -44,7 +43,8 @@ if command == "cmds":
     
 if command == "ls":
 
-    
+  if DEBUG_MODE == True:
+    print ("test debug")
   exn = ""
   print(glob.glob(currentpth))
   
@@ -62,16 +62,8 @@ if command == "down-the-rabbit-hole":
   
   if ans == "Y":
     print("we are setting up developer mode! please wait")
-    DEBUG_MODE = True
-    try:
-      os.system("export DEBUG_PYOS='true'")
-    except:
-      os.system("setx DEBUG_PYOS 'true'")
-    print("restarting....")
-    sleep(1)
-    try:
-      os.system("clear")
-    except:
-      os.system("cls")
-# script closes at this point, so we run this command to loop it
+    print("ok, we need a bit of help to activate the modules!\nrun the command specified for your os ( all linux os are listed under 'linux', and it must be placed in the .bashrc file at the ***BOTTOM***)")
+    print("WINDOWS 10:  setx DEBUG_PYOS true")
+    print("LINUX:       export DEBUG_PYOS=\"true\"")
+    # script closes at this point, so we run this command to loop it
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
