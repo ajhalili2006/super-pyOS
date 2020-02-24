@@ -44,11 +44,9 @@ if command == "cmds":
     
 if command == "ls":
 
-  if DEBUG_MODE == True:
-    0
-  
-  print(glob.glob(currentpth))
     
+  exn = ""
+  print(glob.glob(currentpth))
   
 if command == "xen":
 
@@ -68,7 +66,7 @@ if command == "down-the-rabbit-hole":
     try:
       os.system("export DEBUG_PYOS='true'")
     except:
-      os.system("")
+      os.system("setx DEBUG_PYOS 'true'")
     print("restarting....")
     sleep(1)
     try:
