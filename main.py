@@ -64,8 +64,11 @@ if command == "down-the-rabbit-hole":
   
   if ans == "Y":
     print("we are setting up developer mode! please wait")
-    DEBUG_MODE = "true"
-    os.putenv("DEBUG_PYOS", "true")
+    DEBUG_MODE = True
+    try:
+      os.system("export DEBUG_PYOS='true'")
+    except:
+      os.system("")
     print("restarting....")
     sleep(1)
     try:
