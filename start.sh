@@ -1,1 +1,3 @@
-python3 boot.py
+#!/usr/bin/env python3
+
+#this is shell ;)

@@ -40,7 +40,9 @@ if command == "cmds":
   
   print("xen:  xent cli")
     
-    
+  print("clear: clears screen")
+  
+  
 if command == "ls":
   xr = input("path>")
   if xr == "":
@@ -86,4 +88,4 @@ if command == "vim":
       os.system("nano")
     # script closes at this point, so we run this command to loop it
 
-    os.system('python3 ~/main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
+    os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
