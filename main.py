@@ -91,7 +91,9 @@ if command == "virtualenv":
   
 if command == "virtualenv --run":
   print("preparing to reboot in other operating system...")
-  # 
+  virname = input("virtualenv name: ")
+  # must have nme and would run the start command- virtualenv must be generated
+  # virtualenv must already be set up, otherwise it wont work
   
   
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
