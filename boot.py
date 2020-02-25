@@ -1,8 +1,8 @@
 import os
 from time import sleep
-print("***PYOS***")
+print("\033[3;37;40m **PYOS** \033[0;37;40m \n")
 print("a collab between ProtechCEO and J-tech-foundation")
-print("© 2020- All rights reserved")
+
 sleep(3)
 #no, this is pauser so people can read above :)
 #bios is on everything, no matter what ;)

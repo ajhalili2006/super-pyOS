@@ -61,6 +61,7 @@ if command == "xen":
   
 if command == "down-the-rabbit-hole":
   ans = input ("are you sure you want to enable debug(Y/N)> ")
+  
 if command == "cd":
     np = input(currentpath + "/")
 
@@ -94,7 +95,7 @@ if command == "virtualenv venv":
   os.system("virtualenv venv")
   
 if command == "virtualenv run":
-  print("preparing system for virtualisation...")# RUN VENV
+  print("\033[1;32mPreparing system for virtualisation...\033[1;m")# RUN VENV
   for i in range(5 ** 5):
     print("getting system ready...")
   os.system("source venv/bin/activate")
