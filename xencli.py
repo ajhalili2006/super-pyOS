@@ -15,7 +15,7 @@ if command == "help":    # this shows help message
   help = input("help topic: ") # see 'specific help topics for the topics!
   
 elif command == "exit":  # exit
-  sys.exit("exited xen")
+  os.system("python3 main.py")
 
 elif command == "cmds":
   print(cmds)

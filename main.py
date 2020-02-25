@@ -89,5 +89,9 @@ if command == "virtualenv":
       if DEBUG_MODE == True:
         print("EXCEPT: attempted 'virtualenv, task terminated in dev mode")
   
-
-    os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
+if command == "virtualenv --run":
+  print("preparing to reboot in other operating system...")
+  # 
+  
+  
+os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
