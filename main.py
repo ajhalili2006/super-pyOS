@@ -96,10 +96,8 @@ if command == "virtualenv venv":
   
 if command == "virtualenv run":
   print("preparing system for virtualisation...")# RUN VENV
-  for i in range(5 ** 5):
-    print("\033[1;32mGetting system ready\033[1;m")
   os.system("source venv/bin/activate")
 
 # end
     
-os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
+os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate moduleb
