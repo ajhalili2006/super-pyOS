@@ -95,9 +95,9 @@ if command == "virtualenv venv":
   os.system("virtualenv venv")
   
 if command == "virtualenv run":
-  print("\033[1;32mPreparing system for virtualisation...\033[1;m")# RUN VENV
+  print("preparing system for virtualisation...")# RUN VENV
   for i in range(5 ** 5):
-    print("getting system ready...")
+    print("\033[1;32mGetting system ready\033[1;m")
   os.system("source venv/bin/activate")
 
 # end
