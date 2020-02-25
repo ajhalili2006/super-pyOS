@@ -89,7 +89,7 @@ if command == "virtualenv":
     # for developer mode:
       if DEBUG_MODE == True:
         print("EXCEPT: attempted 'virtualenv, task terminated in dev mode")
-  
+      print("")
 if command == "virtualenv venv":
   print("generating virtual environment VENV")  # GENERATE VENV
   os.system("virtualenv venv")

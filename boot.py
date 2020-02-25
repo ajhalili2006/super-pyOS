@@ -1,7 +1,7 @@
 import os
 from time import sleep
 print("\033[3;37;40m **PYOS** \033[0;37;40m \n")
-print("a collab between ProtechCEO and J-tech-foundation")
+print("a collab between ProtechCEO and J-tech-foundation \033[0m")
 
 sleep(3)
 #no, this is pauser so people can read above :)
@@ -14,7 +14,7 @@ try:
   os.system("clear")
 except:
   os.system("cls")
-print("install dependencies?(Y/N)")
+print("install dependencies?(\033[38;5;28mY\033[0m/\033[38;5;124mN\033[0m)")
 
 installdep = input("> ")
 
