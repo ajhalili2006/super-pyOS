@@ -77,23 +77,28 @@ if command == "clear":
     # for developer mode:
     if DEBUG_MODE == True:
       print("EXCEPT: attempted 'clear' falling back to 'cls'")
-      os.system("cls")
+      os.system("cls && python3 main.py")
     # script closes at this point, so we run this command to loop it
-    
 
+# VIRTUALISATION
 if command == "virtualenv":
     try:
-      os.system("virtualenv")
+      os.system("virtualenv")  # SHOW VIRTUALENV CLI COMMANDS
     except:
     # for developer mode:
       if DEBUG_MODE == True:
         print("EXCEPT: attempted 'virtualenv, task terminated in dev mode")
   
-if command == "virtualenv --run":
-  print("preparing to reboot in other operating system...")
-  virname = input("virtualenv name: ")
-  # must have nme and would run the start command- virtualenv must be generated
-  # virtualenv must already be set up, otherwise it wont work
+if command == "virtualenv venv":
+  print("generating virtual environment VENV")  # GENERATE VENV
+  os.system("virtualenv venv")
   
-  
+if command == "virtualenv run":
+  print("preparing system for virtualisation...")# RUN VENV
+  for i in range(5 ** 5):
+    print("getting system ready...")
+  os.system("source venv/bin/activate")
+
+# end
+    
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
