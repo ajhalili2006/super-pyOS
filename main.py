@@ -39,9 +39,11 @@ if command == "cmds":
   print("ls:   shows all files in the directory")
   
   print("xen:  xent cli")
+  
+  print("virtualenv: shows virtualenv")
     
   print("clear: clears screen")
-  
+  os.system("python3 main.py")
   
 if command == "ls":
   xr = input("path>")
@@ -70,15 +72,22 @@ if command == "cd":
 if command == "clear":
   #there is a safeguard to this, good!
   try:
-    os.system("clear")
+    os.system("clear && python3 main.py")
   except:
     # for developer mode:
     if DEBUG_MODE == True:
       print("EXCEPT: attempted 'clear' falling back to 'cls'")
       os.system("cls")
     # script closes at this point, so we run this command to loop it
+    
 
 if command == "virtualenv":
+    try:
+      os.system("virtualenv")
+    except:
+    # for developer mode:
+      if DEBUG_MODE == True:
+        print("EXCEPT: attempted 'virtualenv, task terminated in dev mode")
   
 
     os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
