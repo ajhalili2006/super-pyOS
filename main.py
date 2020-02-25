@@ -76,16 +76,9 @@ if command == "clear":
     if DEBUG_MODE == True:
       print("EXCEPT: attempted 'clear' falling back to 'cls'")
       os.system("cls")
-      
-if command == "vim":
-  #there is a safeguard to this, good!
-  try:
-    os.system("vim")
-  except:
-    # for developer mode:
-    if DEBUG_MODE == True:
-      print("EXCEPT: attempted 'vim' falling back to 'nano'")
-      os.system("nano")
     # script closes at this point, so we run this command to loop it
+
+if command == "virtualenv":
+  
 
     os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate module
