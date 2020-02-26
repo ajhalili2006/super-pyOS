@@ -9,3 +9,6 @@ from time import *
 #---------------------------------------------------
 
 os.system("clear")
+
+print("configuration")
+print("---------------")
