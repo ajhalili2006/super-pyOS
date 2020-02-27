@@ -17,7 +17,7 @@ print("---------------")
 print("")
 print("1. see licence status")
 print("2. exit configuration")
-
+print("3. force install all packages")
 
 config = input("choose an option: ")
 
@@ -27,6 +27,9 @@ if config == "1":
 
 if config == "2":
   os.system("clear && python3 main.py")
+  
+if config == "3":
+  os.system("pip install -r requirements.txt")
   
 else:
   sys.exit("invalid command, system aborted action")
