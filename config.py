@@ -12,12 +12,14 @@ licence_status = "valid, available for up to 3 devices"
 
 os.system("clear")
 
-print("configuration")
+print("\033[1;31mConfiguration\033[1;m")
 print("---------------")
 print("")
 print("1. see licence status")
 print("2. exit configuration")
 print("3. force install all packages")
+print("4. edit .bashrc file")
+print("5. edit .env")
 
 config = input("choose an option: ")
 
@@ -30,6 +32,12 @@ if config == "2":
   
 if config == "3":
   os.system("pip install -r requirements.txt")
+  
+if config == "4":
+  os.system("vim .bashrc")
+
+if config == "5":
+  os.system("vim .env")
   
 else:
   sys.exit("invalid command, system aborted action")
