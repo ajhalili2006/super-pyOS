@@ -41,6 +41,8 @@ if command == "cmds":
   print("xen:  xent cli")
   
   print("virtualenv: shows virtualenv")
+   
+  print("config: opens superPy Configurator")  
     
   print("clear: clears screen")
   os.system("python3 main.py")
