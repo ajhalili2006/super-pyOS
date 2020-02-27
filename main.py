@@ -99,5 +99,8 @@ if command == "virtualenv run":
   os.system("source venv/bin/activate")
 
 # end
+
+if command == "config":
+  os.system("python3 config.py")
     
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate moduleb
