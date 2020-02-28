@@ -41,7 +41,7 @@ if command == "cmds":
   print("xen:  xent cli")
   
   print("virtualenv: shows virtualenv")
-   
+    
   print("config: opens superPy Configurator")  
     
   print("clear: clears screen")
@@ -104,5 +104,6 @@ if command == "virtualenv run":
 
 if command == "config":
   os.system("python3 config.py")
+
     
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate moduleb

@@ -6,6 +6,7 @@ import sys
 import glob
 from time import *
 
+
 #---------------------------------------------------
 licence_status = "valid, available for up to 3 devices"
 #---------------------------------------------------
