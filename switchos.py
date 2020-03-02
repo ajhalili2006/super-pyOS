@@ -17,4 +17,6 @@ print("1. switch execution path")
 
 switcher = input("choose an option: ")
 
-# if switcher == "1":
+if switcher == "1":
+  os.system("clear")
+  switcherpath = input("") # need to code something that'll switch to the folder and run the files there
