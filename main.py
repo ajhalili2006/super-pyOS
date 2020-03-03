@@ -40,6 +40,8 @@ if command == "cmds":
   
   print("xen:  xent cli")
   
+  print("vim: open vim")
+  
   print("virtualenv: shows virtualenv")
     
   print("config: opens superPy Configurator")  
@@ -64,6 +66,10 @@ if command == "xen":
 if command == "down-the-rabbit-hole":
   ans = input ("are you sure you want to enable debug(Y/N)> ")
   
+if command == "vim":
+  os.system("pyvim")
+ 
+
 if command == "cd":
     np = input(currentpath + "/")
 
