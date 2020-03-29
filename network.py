@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# The network utility
 
 from ishell.command import Command
 from ishell.console import Console
