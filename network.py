@@ -103,7 +103,7 @@ class Enable(Command):
         self.prompt = "RouterA"
         self.prompt_delim = "#"
         password = getpass.getpass()
-        if password != 'network1':
+        if password != 'python':
             _print("%% Invalid Password, access denied")
             return
 
