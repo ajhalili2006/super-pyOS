@@ -47,6 +47,8 @@ if command == "cmds":
   print("config: opens superPy Configurator")  
     
   print("clear: clears screen")
+  
+  print("network: configure your network")
   os.system("python3 main.py")
   
 if command == "ls":
@@ -110,6 +112,11 @@ if command == "virtualenv run":
 
 if command == "config":
   os.system("python3 config.py")
+  
+if command == "network":
+  print("entering network and DNS configuration...")
+  sleep(2)
+  os.system("python3 network.py")
 
     
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate moduleb
