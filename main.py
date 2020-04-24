@@ -5,6 +5,9 @@ import subprocess
 import sys
 import glob
 from time import *
+import logging
+from datetime import datetime
+
 
 # machine settings / enviroment paths
 
@@ -15,8 +18,15 @@ if os.getenv("DEBUG_PYOS") == None:
 elif os.getenv("DEBUG_PYOS") == "true":
   DEBUG_MODE = True
   
-  
-#-------------------------  
+#------------------------- LOGGING FILE-------
+logging.basicConfig(filename="pyos.log", level=logging.INFO)
+#---------------------------------------------
+
+now = datetime.now()
+
+current_time = now.strftime("%H:%M:%S")
+
+#---------------------------------------------
 currentpath = os.getcwd()
 
 #----------------------------------------------------------------------------------------#
@@ -26,7 +36,7 @@ currentpath = os.getcwd()
  
   # command prompt starts here
   
-
+logging.info("[" + current_time + "]" + ": OS started successfully")
 command = input(currentpath + "> ")
   # command prompt ends here
   
