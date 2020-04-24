@@ -59,6 +59,8 @@ if command == "cmds":
   print("clear: clears screen")
   
   print("network: configure your network")
+  
+  print("exit: exit pyOS")
   os.system("python3 main.py")
   
 if command == "ls":
@@ -128,5 +130,10 @@ if command == "network":
   sleep(2)
   os.system("python3 network.py")
 
-    
+if command == "exit":
+  sys.exit("exited successfully")
+  logging.info("[" + current_time + "]" + ": OS exited successfully")
+  
+else:
+  logging.error("[" + current_time + "]" + ": command " + command + " could not be found")
 os.system('python3 main.py')#this will go through the entire boot process again, the boot section should go into a seperate moduleb
