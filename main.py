@@ -7,6 +7,8 @@ import glob
 from time import *
 import logging
 from datetime import datetime
+import licelock
+
 
 
 # machine settings / enviroment paths
@@ -28,6 +30,9 @@ current_time = now.strftime("%H:%M:%S")
 
 #---------------------------------------------
 currentpath = os.getcwd()
+
+
+licelock.antipiracy() # init anti-piracy protection 
 
 #----------------------------------------------------------------------------------------#
 
