@@ -5,3 +5,7 @@ index.html
 test-directory/
 .glitch-assets
 SECURITY.md
+
+## Caches and Logs
+pyos.log
+__pycache__
