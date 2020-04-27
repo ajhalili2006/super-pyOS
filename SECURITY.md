@@ -4,9 +4,10 @@
 
 The following official versions are being updated with security updates
 
-| Version        | Supported          |
-| -------        | ------------------ |
-| 1.0.0.batman   | :white_check_mark: |
+| Version                | Supported          |   Type   |
+| -------                | ------------------ | -------- |
+| 1.0.0.batman           | :white_check_mark: |  feature |
+| 1.0.1.nonamethistime   | :white_check_mark: |  security|
 
 ## Reporting a Vulnerability
 
